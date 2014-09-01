@@ -1,0 +1,1 @@
+window.onload = function () {window.alert('Yay Node! Twice!');}
