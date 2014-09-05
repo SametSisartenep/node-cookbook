@@ -8,7 +8,10 @@ var mimeTypes = {
 	'.css' : 'text/css'
 };
 
-var cache = {};
+var cache = {
+		store: {},
+		maxSize: 26214400 //bytes
+};
 
 function onRequest ( request, response ) {
 	var lookup = path.basename(decodeURI(request.url)) || 'index.html';
