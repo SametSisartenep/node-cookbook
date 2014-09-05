@@ -5,7 +5,9 @@ var fs = require('fs');
 var mimeTypes = {
 	'.js' : 'text/javascript',
 	'.html' : 'text/html',
-	'.css' : 'text/css'
+	'.css' : 'text/css',
+	'.7z' : 'application/x-7z-compressed',
+	'.pdf' : 'application/x-pdf'
 }
 
 http.createServer(function ( request, response ) {
